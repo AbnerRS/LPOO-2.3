@@ -12,7 +12,7 @@ public class Agendamento {
 	}
 	
 	public void agendarAluno() {
-		
+		.
 	}
 			
 	public void tipoLogin() {
@@ -40,7 +40,7 @@ public class Agendamento {
 	    }
 	    
 	    else {
-	    	System.out.println("OpÁ„o Inv·lida. Por favor tente novamente. ");
+	    	System.out.println("Op√ß√£o Inv√°lida. Por favor tente novamente. ");
 	    }
 	}
 			 
