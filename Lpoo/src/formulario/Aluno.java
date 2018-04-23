@@ -1,7 +1,6 @@
 package formulario;
-import java.util.Scanner;
 
-public class Aluno {
+public class Aluno extends ComunidadePOLI{
 
 	private String nome;
 	private String cpfAluno;
@@ -29,7 +28,7 @@ public class Aluno {
 		return cpfAluno;
 	} 
 			
-	public void setCurso(String Curso) {
+	public void setCurso(String curso) {
 		this.curso = curso;
 	}
 		

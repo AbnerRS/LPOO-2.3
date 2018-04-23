@@ -1,6 +1,6 @@
 package formulario;
 
-public class Formulario extends Agendamento {
+public class Formulario {
 
 	public static void main(String[] args) {
 		

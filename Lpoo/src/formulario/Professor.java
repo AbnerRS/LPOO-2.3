@@ -2,12 +2,12 @@ package formulario;
 
 import java.util.Date;
 
-public class Professor extends ProfessoresPOLI {
+public class Professor extends ComunidadePOLI {
 	
 	private String nome;
 	private String cpfProf;
 	private String cursoCoordenação;
-	private Aluno [] alunosListaDeEspera = new Aluno [100];
+	private Aluno[] alunosLista = new Aluno [10];
 	
 	public Professor(String nome, String cpfProf, String cursoCoordenação) {
 		this.nome = nome;
@@ -39,28 +39,28 @@ public class Professor extends ProfessoresPOLI {
 	 return cursoCoordenação;
  }
  
- public void setListaDeEspera(Aluno proxLista) {
-	 for(int counter = 0; counter < alunosListaDeEspera.length; counter++) {
-		 if(alunosListaDeEspera[counter] == null) {
-			 alunosListaDeEspera[counter] = proxLista;
-			 break;
-		 }
-	 }	 
+ //Método para criar lista de espera de alunos agendados para este professor
+ public void setListaDeEspera(Aluno agendado) {
+			 for(int count = 0; count < alunosLista.length; count++) {
+				 if(alunosLista[count] == null) {
+					 alunosLista[count] = agendado;
+					 break;
+				 }
+			 }	 
  }
  
- public void getListaDeEspera() {
-	 System.out.printf("Lista de espera do professor %s%n%n", nome);
-	 for(int counter = 0; counter < alunosListaDeEspera.length; counter++) {
+ //Apenas para acompanhar funcionamento do código no console
+ public void mostraListaDeEspera() {
+	 System.out.printf("Lista de espera %n%n");
+	 for(int counter = 0; counter < alunosLista.length; counter++) {
 			
-			if(alunosListaDeEspera[0] == null) {
+			if(alunosLista[0] == null) {
 				System.out.print("Não há alunos na lista de espera");
 				break;
 			}
 			
-			else if (alunosListaDeEspera[counter] == null) 
-				break;
-			else {
-				System.out.printf("%d\t%s", (counter + 1), alunosListaDeEspera[counter].getNome());
+			else if (alunosLista[counter] != null) {
+				System.out.printf("%d\t%s", (counter + 1), alunosLista[counter].getNome());
 				System.out.println();
 			}
 			
