@@ -1,18 +1,18 @@
 package formulario;
 import java.util.Scanner;
 
-public class Aluno extends Agendamento{
+public class Aluno {
+
 	private String nome;
-	private String cpfAluno = "70293063419";
-	private String disciplina;
-	private String turma;
-	 
-	public Aluno (String nome, String cpf ,String disciplina) {
-		
-		
-		this.disciplina = disciplina;
-	}
+	private String cpfAluno;
+	private String curso;
 	
+	public Aluno(String nome, String cpfAluno, String curso) {
+		this.nome = nome;
+		this.cpfAluno = cpfAluno;
+		this.curso = curso;
+	}
+
 	public void setNome(String nome) {
 		this.nome = nome;	
 	}
@@ -28,29 +28,14 @@ public class Aluno extends Agendamento{
 	public String getcpfAluno() {
 		return cpfAluno;
 	} 
-	
 			
-	public void setDisciplina(String disciplina) {
-		this.disciplina = disciplina;
+	public void setCurso(String Curso) {
+		this.curso = curso;
 	}
 		
-	public String getTurma() {
-		return disciplina;
+	public String getCurso() {
+		return curso;
 	}
 	
-	
-	
-	
-	public void escolhaProfessorAgendar() {
-		
-	}
-	
-	public void escolhaDia() {
-		
-	}
-	
-	public void escolhaHorario() {
-		
-	}
 	
 }
