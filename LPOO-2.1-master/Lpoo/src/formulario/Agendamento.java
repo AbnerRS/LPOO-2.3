@@ -9,7 +9,7 @@ public class Agendamento {
 		
 	//Método para cadastrar os professores os quais os alunos irão requerir agendar um horário
 	//Instancias apenas para teste
-	public void cadastroProfessor() {
+/*	public void cadastroProfessor() {
 		ComunidadePOLI cadastro = new ComunidadePOLI();
 		Professor profCadastro = new Professor(null, null, null);
 		
@@ -91,8 +91,8 @@ public class Agendamento {
 	    	agendarAluno();
 	    else 
 	    	cadastroProfessor();
-	    	
+	    	*/
 	}
 			 
 	
-}
+

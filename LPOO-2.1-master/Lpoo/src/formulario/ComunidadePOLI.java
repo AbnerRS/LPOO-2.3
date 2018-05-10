@@ -43,12 +43,12 @@ private Aluno [] alunosPoli = new Aluno [100];
 				break;
 			}
 			
-			else if (profPoli[counter] != null) {
-				System.out.printf("%n%d\t%s\t\t%s\t%s%n", (counter + 1), profPoli[counter].getnome(), profPoli[counter].getcpf(), profPoli[counter].getCursoCoordenação());
-				System.out.println();
+//			else if (profPoli[counter] != null) {
+//				System.out.printf("%n%d\t%s\t\t%s\t%s%n", (counter + 1), profPoli[counter].getnome(), profPoli[counter].getcpf(), profPoli[counter].getCursoCoordenação());
+//				System.out.println();
 			}
 		}
-	}
+	
 
 	// Método para armazenar a lista de espera dos alunos
 	//Salvar em um arquivo posteriormente

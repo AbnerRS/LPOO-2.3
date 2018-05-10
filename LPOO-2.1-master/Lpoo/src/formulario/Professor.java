@@ -20,13 +20,13 @@ public class Professor extends ComunidadePOLI {
 		return cursoCoordenacao;
 	}
 	
-	public void setalunosLista(String alunosLista) {
-		this.alunosLista = alunosLista;
-	}
+	//public void setalunosLista(String alunosLista) {
+	//	this.alunosLista = alunosLista;
+	//}
 		
-	public String getalunosLista() {
-		return alunosLista;
-	}
+	//public String getalunosLista() {
+	//	return alunosLista;
+	//}
 	
 	
 
