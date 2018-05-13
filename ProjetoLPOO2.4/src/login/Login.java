@@ -15,25 +15,23 @@ public class Login {
 
 	public boolean logar() {
 		if (validarLogin() && validarSenha()) 
-				return true;
+			return true;
 		else
-				return false;
+			return false;
 	}
 
 	private boolean validarLogin() {
-		if (this.login.equals("log")) {
+		if (this.login.equals("log")) 
 			return true;
-		} else {
+		else 
 			return false;
-		}
 	}
 
 	private boolean validarSenha() {
-		if (this.senha.equals("s")) {
+		if (this.senha.equals("s")) 
 			return true;
-		} else {
-			return false;
-		}
+		else 
+			return false;	
 	}
 
 }
