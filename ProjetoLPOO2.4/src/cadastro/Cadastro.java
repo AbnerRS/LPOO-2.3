@@ -5,15 +5,14 @@ import java.util.NoSuchElementException;
 import java.util.FormatterClosedException;
 import java.lang.SecurityException;
 import java.io.*;
+import java.util.Scanner;
 
-public class Cadastro {
-	
-	private Formatter arquivo;
+public class Cadastro { //Classe a ser melhorada, separar arquivos de cadastro de cada tipo usuário 
 	
 	//método para abrir arquivo
-    public void abrir(){
+    public static void abrir(String nomearquivo, Formatter arquivo){
         try{
-            arquivo = new Formatter("Cadastro.txt");
+            arquivo = new Formatter(nomearquivo + ".txt");
         }
         catch(SecurityException semPermissao){
             System.err.println("Sem permissao para escrever no arquivo");
@@ -26,7 +25,7 @@ public class Cadastro {
     }
     
     //método para escrever no arquivo
-    public void escrever(String dados){
+    public static void escrever(String dados, Formatter arquivo){
         try{
             arquivo.format("%s", dados);
         }
@@ -39,13 +38,8 @@ public class Cadastro {
         }
     } 
     
-    //método para fechar o arquivo
-    public void fechar(){
-    	arquivo.close();
-    }
-    
     //Método para verificar se o usuário já é cadastrado
-    public boolean jaEstaCadastrado(String nome) throws IOException {
+    public static boolean jaEstaCadastrado(String nome) throws IOException {
     	
     	FileInputStream entrada = new FileInputStream("Cadastro.txt");
 		InputStreamReader entradaFormatada = new InputStreamReader(entrada);
@@ -55,8 +49,31 @@ public class Cadastro {
 		while(linha != null){
 			linha = entradaString.readLine();
 			if(linha.equals(nome))
+				entradaString.close();
 				return true;
 		}
+		entradaString.close();
 		return false;
+    }
+    
+    //método para mostrar o que está cadastrado
+    public static void ler(Scanner entrada)
+    {
+        try
+        {
+            while(entrada.hasNext())          
+                System.out.printf("%s - %d\n",entrada.next(), entrada.nextInt());
+        }
+        catch(NoSuchElementException entradaDiferente)
+        {
+            System.err.println("Entrada diferente da esperada");
+            entrada.close();
+            System.exit(1);
+        }
+        catch(IllegalStateException erroLeitura)
+        {
+            System.err.println("Erro de leitura. Scanner foi fechada antes da input");
+            System.exit(1);
+        }
     }
 }

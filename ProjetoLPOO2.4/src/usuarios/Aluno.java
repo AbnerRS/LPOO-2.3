@@ -19,7 +19,7 @@ public class Aluno extends ComunidadeAcadêmicaPoli{
 	}
 	
 	public String getTurma() {
-		return curso;
+		return turma;
 	}
 		
 	public void setCurso(String curso) {

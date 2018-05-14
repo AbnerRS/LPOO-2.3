@@ -1,7 +1,5 @@
 package login;
 
-import usuarios.*;
-
 public class Login {
 	
 	private String login;
