@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="772.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.ControllerRealizarAgendamentoFuncionario">
+   <children>
+      <Label layoutX="253.0" layoutY="53.0" prefHeight="54.0" prefWidth="236.0" text="Agendamento" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="454.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagens/funcionario.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="600.0" layoutY="54.0" prefHeight="26.0" prefWidth="91.0" text="Sair da Conta" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="33.0" fitWidth="27.0" layoutX="691.0" layoutY="53.0" onMouseClicked="#clickTelaLogin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagens/logout-rounded-up.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="83.0" layoutX="18.0" layoutY="18.0" onMouseClicked="#clickTelaPrincipalFuncionario" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagens/27e2a59ab1ed4e676a85c619ec2cf5f9-seta-fita-curva-by-vexels.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="80.0" layoutY="36.0" prefHeight="19.0" prefWidth="96.0" text="Página anterior">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="299.0" prefHeight="20.0" prefWidth="190.0" text="Turno" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="371.0" layoutY="194.0" prefHeight="20.0" prefWidth="190.0" text="Horário" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TitledPane accessibleRole="CHECK_MENU_ITEM" alignment="BOTTOM_LEFT" animated="false" blendMode="HARD_LIGHT" layoutX="63.0" layoutY="159.0">
+         <content>
+            <AnchorPane accessibleRole="TREE_VIEW" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="188.0" />
+         </content>
+      </TitledPane>
+      <TitledPane accessibleRole="CHECK_MENU_ITEM" animated="false" blendMode="HARD_LIGHT" layoutX="63.0" layoutY="329.0" prefHeight="20.0" prefWidth="202.0">
+         <content>
+            <AnchorPane accessibleRole="TREE_VIEW" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </TitledPane>
+      <Label layoutX="63.0" layoutY="129.0" prefHeight="20.0" prefWidth="190.0" text="Professor" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TitledPane accessibleRole="CHECK_MENU_ITEM" animated="false" blendMode="HARD_LIGHT" layoutX="371.0" layoutY="224.0" prefHeight="20.0" prefWidth="202.0">
+         <content>
+            <AnchorPane accessibleRole="TREE_VIEW" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </TitledPane>
+      <ImageView fitHeight="109.0" fitWidth="120.0" layoutX="561.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true" rotate="14.0">
+         <image>
+            <Image url="@../../imagens/Agenda-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
