@@ -8,9 +8,9 @@ public class TesteLogin {
 
 	public static void main(String[] args) {
 		
-		Aluno aluno1 = new Aluno("George", "07396169437", "Computação", "LF");
+		Aluno aluno1 = new Aluno("George", "07396169437", "12345","Computação", "LF");
 		Cadastro.add(aluno1, "12345678");
-		Aluno aluno3 = new Aluno("Abner", "12345678985", "Elétrica", "MP");
+		Aluno aluno3 = new Aluno("Abner", "12345678985", "12345","Elétrica", "MP");
 		Login login1 = new Login(aluno1.getCpf(),aluno1.getSenha());
 		Login login2 = new Login(aluno3.getCpf(), aluno3.getSenha());
 		

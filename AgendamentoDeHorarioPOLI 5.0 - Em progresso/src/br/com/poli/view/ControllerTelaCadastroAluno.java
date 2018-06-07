@@ -1,8 +1,11 @@
 package br.com.poli.view;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import br.com.poli.usuario.Aluno;
 import br.com.poli.sistema.Cadastro;
 
@@ -10,26 +13,26 @@ public class ControllerTelaCadastroAluno {
 	
 	private Aluno aluno = new Aluno(null, null, null, null, null);
 
-    @FXML
-    private TextField txtfNomeAluno;
+	@FXML
+    private TextField txtcpfAluno;
 
     @FXML
-    private TextField txtfcpfAluno;
-
-    @FXML
-    private TextField txtfCursoAluno;
-
-    @FXML
-    private TextField txtfTurmaAluno;
-
-    @FXML
-    private TextField txtfSenhaAluno;
+    private TextField txtCursoAluno;
 
     @FXML
     private Button btnCadastrar;
 
     @FXML
-    public void clickVoltar() throws Exception  {
+    private TextField txtTurmaAluno;
+
+    @FXML
+    private PasswordField txtSenhaAluno;
+
+    @FXML
+    private TextField txtNomeAluno;
+
+    @FXML
+    public void clickVoltar(MouseEvent event) throws Exception  {
     	try {
             new SegundaTela("TelaSelecaodeCadastro.fxml").start(MainApp.stage);
         } 
@@ -40,15 +43,15 @@ public class ControllerTelaCadastroAluno {
     }
     
     @FXML
-    public void clickCadastrar () throws Exception{
+    public void clickCadastrar (ActionEvent event) throws Exception{
     	
     	try {
     		
-    		aluno.setNome(txtfNomeAluno.getText());
-    		aluno.setCpf(txtfcpfAluno.getText());
-    		aluno.setCurso(txtfCursoAluno.getText());
-    		aluno.setTurma(txtfTurmaAluno.getText());
-    		aluno.setSenha(txtfSenhaAluno.getText());
+    		aluno.setNome(txtNomeAluno.getText());
+    		aluno.setCpf(txtcpfAluno.getText());
+    		aluno.setCurso(txtCursoAluno.getText());
+    		aluno.setTurma(txtTurmaAluno.getText());
+    		aluno.setSenha(txtSenhaAluno.getText());
     		Cadastro.add(aluno, aluno.getSenha());
     		Cadastro.mostrar();
     		System.out.println();

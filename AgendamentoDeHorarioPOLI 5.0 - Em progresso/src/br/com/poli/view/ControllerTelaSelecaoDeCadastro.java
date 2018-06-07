@@ -1,7 +1,9 @@
 package br.com.poli.view;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.input.MouseEvent;
 
 
 public class ControllerTelaSelecaoDeCadastro {
@@ -16,7 +18,7 @@ public class ControllerTelaSelecaoDeCadastro {
     private Button btnCadastroFuncionario;
     
     @FXML
-    public void clickVoltar() throws Exception  {
+    public void clickVoltar(MouseEvent event) throws Exception  {
     	try {
             new SegundaTela("TelaLogin.fxml").start(MainApp.stage);
         } 
@@ -27,7 +29,7 @@ public class ControllerTelaSelecaoDeCadastro {
     }
     
     @FXML
-    public void clickCadastroAluno() throws Exception  {
+    public void clickCadastroAluno(ActionEvent event) throws Exception  {
     	try {
             new SegundaTela("TelaCadastroAluno.fxml").start(MainApp.stage);
         } 
@@ -38,7 +40,7 @@ public class ControllerTelaSelecaoDeCadastro {
     }
     
     @FXML
-    public void clickCadastroFuncionario() throws Exception  {
+    public void clickCadastroFuncionario(ActionEvent event) throws Exception  {
     	try {
             new SegundaTela("TelaCadastroFuncionario.fxml").start(MainApp.stage);
         } 
@@ -49,7 +51,7 @@ public class ControllerTelaSelecaoDeCadastro {
     }
     
     @FXML
-    public void clickCadastroProfessor() throws Exception  {
+    public void clickCadastroProfessor(ActionEvent event) throws Exception  {
     	try {
             new SegundaTela("TelaCadastroProfessor.fxml").start(MainApp.stage);
         } 

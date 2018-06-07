@@ -9,16 +9,16 @@ public class TesteCadastro {
 	public static void main (String [] args) {
 		
 	
-	Aluno aluno1 = new Aluno("George", "07396169437", "Computação", "LF");
-	Aluno aluno2 = new Aluno("Pedro", "12345678985", "Civil", "MP");
-	Aluno aluno3 = new Aluno("Abner", "12345678985", "Elétrica", "MP");
+	Aluno aluno1 = new Aluno("George", "07396169437","12345", "Computação", "LF");
+	Aluno aluno2 = new Aluno("Pedro", "12345678985", "12345","Civil", "MP");
+	Aluno aluno3 = new Aluno("Abner", "12345678985","12345", "Elétrica", "MP");
 	
-	Professor prof1 = new Professor ("Ivan", "12345878912", "Básico");
-	Professor prof2 = new Professor ("Bruno", "12345878912", "Computação");
-	Professor prof3 = new Professor ("Igor", "12345878912", "Elétrica");
+	Professor prof1 = new Professor ("Ivan", "12345878912","12345", "Básico");
+	Professor prof2 = new Professor ("Bruno", "12345878912","12345", "Computação");
+	Professor prof3 = new Professor ("Igor", "12345878912","12345", "Elétrica");
 
-	Funcionario func1 = new Funcionario ("João", "12345678956", "office boy");
-	Funcionario func2 = new Funcionario ("Paulo", "12345678956","Aux. Adm");
+	Funcionario func1 = new Funcionario ("João", "12345678956","12345", "office boy");
+	Funcionario func2 = new Funcionario ("Paulo", "12345678956","12345","Aux. Adm");
 	
 	Cadastro.add(aluno1, "12345678");
 	Cadastro.add(aluno2,"12345678");

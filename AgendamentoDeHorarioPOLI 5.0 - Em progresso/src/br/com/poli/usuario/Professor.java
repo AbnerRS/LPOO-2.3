@@ -31,12 +31,18 @@ public class Professor extends ComunidadeAcademicaPoli{
 			return turno;
 		}
 		
-		public void setAlunosAgendados(Aluno aluno, int numeroHorario) {
+		public void setAlunosAgendados(Aluno aluno, int numeroHorario) throws Exception {
+			if(numeroHorario > 0)
 			this.alunosAgendados[numeroHorario - 1] = aluno;
+			else
+				throw new IllegalArgumentException ("Número do horário deve ser maior que 0");
 		}
 		
-		public Aluno getAlunosAgendados(int numeroHorario) {
+		public Aluno getAlunosAgendados(int numeroHorario) throws Exception{
+			if(numeroHorario > 0)
 			return alunosAgendados[numeroHorario - 1];
+			else
+				throw new IllegalArgumentException ("Número do horário deve ser maior que 0");
 		}
 		
 		//Método para retornar um horário indicando o seu número no array

@@ -1,16 +1,18 @@
 package br.com.poli.view;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class ControllerTelaLogin {
 
     @FXML
-    private TextField txtfLogin;
+    private TextField txtLogin;
 
     @FXML
-    private TextField txtfSenha;
+    private PasswordField txtSenha;
 
     @FXML
     private Button btnEntrar;
@@ -19,7 +21,7 @@ public class ControllerTelaLogin {
     private Button btnCriarConta;
    
     @FXML
-    public void clickBotaoCriarConta() {
+    public void clickBotaoCriarConta(ActionEvent event) {
     	try {
             new SegundaTela("TelaSelecaoDeCadastro.fxml").start(MainApp.stage);
         } 

@@ -50,11 +50,10 @@
             <Font size="17.0" />
          </font>
       </Label>
-      <TextField fx:id="txtfNomeAluno" blendMode="ADD" layoutX="59.0" layoutY="154.0" prefHeight="25.0" prefWidth="168.0" />
-      <TextField fx:id="txtfcpfAluno" blendMode="ADD" layoutX="59.0" layoutY="214.0" prefHeight="25.0" prefWidth="168.0" />
-      <TextField fx:id="txtfCursoAluno" blendMode="ADD" layoutX="59.0" layoutY="274.0" prefHeight="25.0" prefWidth="168.0" />
-      <TextField fx:id="txtfTurmaAluno" blendMode="ADD" layoutX="59.0" layoutY="325.0" prefHeight="25.0" prefWidth="168.0" />
-      <TextField fx:id="txtfSenhaAluno" blendMode="ADD" layoutX="59.0" layoutY="376.0" prefHeight="25.0" prefWidth="168.0" />
+      <TextField fx:id="txtNomeAluno" blendMode="SRC_ATOP" layoutX="59.0" layoutY="154.0" prefHeight="25.0" prefWidth="168.0" promptText="Nome" />
+      <TextField fx:id="txtcpfAluno" blendMode="SRC_ATOP" layoutX="59.0" layoutY="214.0" prefHeight="25.0" prefWidth="168.0" promptText="CPF" />
+      <TextField fx:id="txtCursoAluno" blendMode="SRC_ATOP" layoutX="59.0" layoutY="274.0" prefHeight="25.0" prefWidth="168.0" promptText="Curso" />
+      <TextField fx:id="txtTurmaAluno" blendMode="SRC_ATOP" layoutX="59.0" layoutY="325.0" prefHeight="25.0" prefWidth="168.0" promptText="Turma" />
       <Button fx:id="btnCadastrar" layoutX="261.0" layoutY="373.0" mnemonicParsing="false" onAction="#clickCadastrar" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: #1E90FF;" text="Cadastrar" textFill="WHITE">
          <font>
             <Font size="15.0" />
@@ -75,5 +74,6 @@
             <Image url="@../../../../../imagens/cadastro.png" />
          </image>
       </ImageView>
+      <PasswordField fx:id="txtSenhaAluno" layoutX="59.0" layoutY="376.0" prefHeight="25.0" prefWidth="168.0" promptText="Senha" />
    </children>
 </AnchorPane>

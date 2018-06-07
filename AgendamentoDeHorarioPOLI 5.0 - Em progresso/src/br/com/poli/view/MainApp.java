@@ -19,7 +19,7 @@ public class MainApp extends Application {
        MainApp.stage = primaryStage;
        Scene scene = new Scene(cena);
        stage.setScene(scene);
-       stage.setTitle("Login");
+       stage.setTitle("Tela Inicial");
        stage.show();
     }
     
